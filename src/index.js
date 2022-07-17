@@ -30,12 +30,12 @@ function onSearch(event) {
     listEl.innerHTML = markup;
 }
 
-fetchCountries()
-.then(renderCountryInfo)
-.catch(error => console.log(error));
-// Notiflix.Notify.failure(`"Oops, there is no country with that name"`)
+// fetchCountries()
+// .then(renderCountryInfo)
+// .catch(error => console.log(error));
+// // Notiflix.Notify.failure(`"Oops, there is no country with that name"`)
 
-function renderCountryInfo(country) {
-    const markup = countryInfo(country);
-    containerEl.innerHTML = markup;
-}
+// function renderCountryInfo(country) {
+//     const markup = countryInfo(country);
+//     containerEl.innerHTML = markup;
+// }
