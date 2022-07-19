@@ -1,10 +1,20 @@
-
-<div class='country-card'>
- <img class="flag-icon" src="{{this.flags.svg}}" alt="{{this.name.common}}" width="60" height="50">
+{{!-- кома перед this, першому ел. коми не треба --}}
+{{!-- <div class='country-card'>
+  <img class="flag-icon" src="{{this.flags.svg}}" alt="{{this.name.common}}" width="30" height="20">
   <h1 class='name'>{{this.name.common}}</h1>
   <p class='text'><b>Capital:</b> {{this.capital}}</p>
   <p class='text'><b>Population:</b> {{this.population}}</p>
     <p class='text'><b>Languages:</b> {{#each languages}} 
   <span>{{#if @index includeZero=false}}, {{/if}}{{this}}</span>
   {{/each}}</p>
+</div> --}}
+
+
+{{!-- варіант 2 з Object.values --}}
+<div class='country-card'>
+ <img class="flag-icon" src="{{this.flags.svg}}" alt="{{this.name.common}}" width="30" height="20">
+  <h1 class='name'>{{this.name.common}}</h1>
+  <p class='text'><b>Capital:</b> {{this.capital}}</p>
+  <p class='text'><b>Population:</b> {{this.population}}</p>
+    <p class='text'><b>Languages:</b> {{this.languages}}</p>
 </div>
